@@ -34,9 +34,9 @@ This project is a simple version of our SRMIST Trichy collage website.
    ```python
     self.HOST = "<ENTER YOUT HOST>"
     self.PORT = <ENTER YOUR PORT NUMBER>
-    self.USER = <ENTER YOUR USERNAME>
-    self.PASSWORD = <ENTER YOUR PASSWORD>
-    self.DATABASE = <ENTER YOUR DATABASENAME>
+    self.USER = "<ENTER YOUR USERNAME>"
+    self.PASSWORD = "<ENTER YOUR PASSWORD>"
+    self.DATABASE = "<ENTER YOUR DATABASENAME>"
 
     db = DB()
     db.setupDatabase()
