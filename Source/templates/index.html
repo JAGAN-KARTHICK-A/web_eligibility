@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SRM University Tiruchirapalli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/srm.png') }}" alt="SRM" height="85"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ms-auto" style="margin-right: 50px;">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-warning nv-link" aria-current="page" href="/student/dashboard">Student dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-warning nv-link" aria-current="page" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-warning nv-link" aria-current="page" href="/login">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="content" style="width: 100%;">
+        <div id="carouselCaptions" class="carousel slide" style="margin-top: 120px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" aria-current="true" class="active" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="{{ url_for('static', filename='img/clg.webp') }}" class="d-block w-100" style="height:500px;" alt="Student life">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Start your successfull career</h5>
+                  <p>At SRMIST Trichy</p>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='img/students2.webp') }}" class="d-block w-100" alt="SRMIST Campus">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Student life</h5>
+                  <p>Students can get best education and experiance here</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5" style="background-color: #f6f6f6; padding:50px;">
+              <h1 class="display-5 fw-bold">Programs we offer</h1>
+              <p class="col-md-8 fs-4">Our institute offers courses in Engineering and Technology, Hotel Management, Humanities, and Health Sciences at the Diploma, Undergraduate, Graduate and Doctoral levels.
+
+                Programs offered which support the students from all disciplines to increase employability , find opportunities and learn carrer ready skills </p>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{{ url_for('static', filename='img/students3.webp') }}" class="d-block mx-lg-auto img-fluid" alt="SRM" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Life at SRMIST Tiruchirapalli</h1>
+                <p class="lead">
+                  The vibrant life at SRM Institute of Science and Technology (SRMIST) in Tiruchirappalli is marked by a dynamic blend of academic excellence and cultural diversity. The campus buzzes with rigorous academic pursuits and innovative research while celebrating a rich array of student-led cultural events and festivals. With modern facilities, diverse extracurricular activities, and active student engagement in sports and community service, SRMIST offers a lively and enriching environment that supports both personal and academic growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid px-4 py-5" style="background-color: #f6f6f6;">
+            <div class="container">
+              <h2 class="pb-2 border-bottom">Our records</h2>
+        
+              <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                  <h2 class="fw-bold text-body-emphasis">Comprehensive Records Overview</h2>
+                  <p class="text-body-secondary">SRMIST Tiruchirappalli consistently sets impressive records across various fields, from groundbreaking research achievements to high-impact industry collaborations. These records reflect the institution's commitment to excellence and innovation in education and research.</p>
+                  <a class="btn btn-primary btn-lg custom-btn" href="/register">Apply now</a>
+                </div>
+          
+                <div class="col">
+                  <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <div class="col d-flex flex-column gap-2">
+                      <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3">
+                        <img src="{{ url_for('static', filename='img/trophy.png') }}" alt="" height="50px;">
+                      </div>
+                      <h4 class="fw-semibold mb-0 text-body-emphasis">100% placement</h4>
+                      <p class="text-body-secondary">A record breaking placement cell</p>
+                    </div>
+          
+                    <div class="col d-flex flex-column gap-2">
+                      <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3">
+                        <img src="{{ url_for('static', filename='img/highestSalary.png') }}" alt="" height="50px;">
+                      </div>
+                      <h4 class="fw-semibold mb-0 text-body-emphasis">Highest salary</h4>
+                      <p class="text-body-secondary">Highest salary of 52 Lakh per annum</p>
+                    </div>
+          
+                    <div class="col d-flex flex-column gap-2">
+                      <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3">
+                        <img src="{{ url_for('static', filename='img/salary.png') }}" alt="" height="50px;">
+                      </div>
+                      <h4 class="fw-semibold mb-0 text-body-emphasis">Average salary</h4>
+                      <p class="text-body-secondary">Average salary of 8.5 Lakh per annum</p>
+                    </div>
+          
+                    <div class="col d-flex flex-column gap-2">
+                      <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3">
+                        <img src="{{ url_for('static', filename='img/curriculum.png') }}" alt="" height="50px;">
+                      </div>
+                      <h4 class="fw-semibold mb-0 text-body-emphasis">Futurestic curriculam</h4>
+                      <p class="text-body-secondary">SRMIST's futuristic curriculum blends emerging technologies and practical skills, preparing students for the rapidly evolving job market.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Recent events</h2>
+        
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/img/freshersDay.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Freshers day celebration</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="{{ url_for('static', filename='img/srmtree.png') }}" alt="SRM" width="42" height="42">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Completed</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>09/08/2024</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/img/teachersDay.webp');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Teacher's day celebration</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="{{ url_for('static', filename='img/srmtree.png') }}" alt="SRM" width="42" height="42">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Completed</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>05/09/2024</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/img/onamDay.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Onam celebration</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="{{ url_for('static', filename='img/srmtree.png') }}" alt="SRM" width="42" height="42">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Upcoming</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>13/09/2024</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5" style="background-color: #ffc53a; padding:50px; border: 0px;">
+              <h1 class="display-5 fw-bold">SRMIST Tiruchirapalli @Focus</h1>
+              <p class="col-md-8 fs-4">SRM Institute of Science and Technology  is one of the top ranking universities in India with over 52,000 full time students and more than 3200 faculty across India – offering a wide range of undergraduate, postgraduate and doctoral program.</p>
+              <a class="btn btn-primary btn-lg custom-btn" href="/register">Apply now</a>
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid" style="background-color: #e9ecef; margin-bottom: 0px;">
+        <div class="container px-4 py-5" id="hanging-icons">
+          <h2 class="pb-2 border-bottom">Placements in top MNC's</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/google.png') }}" alt="Google" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Google</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/microsoft.png') }}" alt="Microsoft" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Microsoft</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/amazon.png') }}" alt="Amazon" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Amazon</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/dbs.svg') }}" alt="DBS Bank" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">DBS</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/hsbc.svg') }}" alt="HSBC Bank" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">HSBC</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/cisco.png') }}" alt="Cisco" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Cisco</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/boi.svg') }}" alt="Bank of America" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Bank of America</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/torryharris.webp') }}" alt="Torry Haris" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Torry Haris</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/infosys.png') }}" alt="Infosys" height="45px">
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/hp.png') }}" alt="HP" width="45px" height="45px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">HP</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/wipro.svg') }}" alt="Wipro" width="60px" height="60px">
+              </div>
+              <div>
+                <h3 class="fs-2 text-body-emphasis">Wipro</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="{{ url_for('static', filename='img/zoho.png') }}" alt="Zoho" height="45px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="background-color: #b7d8ef;">
+        <div class="container" style="background-color: #b7d8ef;">
+          <div class="p-5 text-center rounded-3" style="background-color: #b7d8ef;">
+            <img src="{{ url_for('static', filename='img/degree.png') }}" alt="Degree" height="100" style="margin-bottom: 10px;">
+            <h1 class="text-body-emphasis">Ready to start your journey with us?</h1>
+            <p class="col-lg-8 mx-auto fs-5 text-muted">
+              Join us at SRMIST Tiruchirappalli to experience cutting-edge education, unparalleled research opportunities, and a vibrant campus life that prepares you for a successful future.
+            </p>
+            <div class="d-inline-flex gap-2 mb-5">
+              <a class="btn btn-primary btn-lg custom-btn" href="/register">Apply now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Actions</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="/register" class="nav-link p-0 text-body-secondary">Register as new student</a></li>
+                <li class="nav-item mb-2"><a href="/login" class="nav-link p-0 text-body-secondary">Login into student portal</a></li>
+                <li class="nav-item mb-2"><a href="/student/dashboard" class="nav-link p-0 text-body-secondary">Access student portal</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Contact us on</h5>
+                <p>9AM - 5PM (from Monday to Friday)</p>
+                <p>
+                  SRM Institute of Science and Technology(SRMIST)
+                  Tiruchirappalli Campus,
+                  Deemed to be University
+                  (Formerly SRM University)
+                  SRM Nagar,
+                  Trichy – Chennai Highway,
+                  Near Samayapuram,
+                  Tiruchirappalli – 621105. Tamilnadu, India.
+                </p> 
+                <p><strong>1800 202 4565</strong></p>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 SRM Institute of Science and Technology. All rights reserved. | Developed by A.Jagan Karthick</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="https://x.com/srmist_trichy"><img src="{{ url_for('static', filename='img/twitter.png') }}" alt="Twitter" height="45"></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/srmist.trichy/"><img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Twitter" height="45"></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/srmist.trichy"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Twitter" height="45"></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>

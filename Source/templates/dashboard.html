@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SRMIST - Student Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+</head>
+  <body style="background-color: #C8BFE7;">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ url_for('static', filename='img/srm.png') }}" class="d-block mx-lg-auto img-fluid" alt="SRM" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to student portal</h1>
+            <div class="container" style="margin-top: 50px; margin-bottom: 50px; background-color: white; border-radius: 20px; padding: 20px;">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                    <input type="text" class="form-control" value="{{ studentname }}" readonly placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                    <input type="email" class="form-control" value="{{ studentemail }}" readonly placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Phone number : (+91)</span>
+                    <input type="tel" class="form-control" value="{{ studentphone }}" readonly placeholder="Phone number" aria-label="Phone-number" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Address</span>
+                    <textarea class="form-control" readonly aria-label="Address" placeholder="Home Address">{{ studentaddress }}</textarea>
+                </div>
+                <a class="btn btn-lg px-4 me-md-2 custom-btn2" style="width: 100%; margin-top: 20px;" href="/logout">Log out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>
