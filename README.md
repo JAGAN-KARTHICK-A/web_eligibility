@@ -1,7 +1,7 @@
 # web_eligibility
 Web-Developer test
 
-# College Website Project
+# SRMIST WebDeveloper Project
 
 ## Overview
 This project is a simple version of our SRMIST Trichy collage website.
