@@ -4,7 +4,7 @@ Web-Developer test
 # SRMIST WebDeveloper Project
 
 ## Note
-*This project is now hosted and live, To access it visit [http://srmtrichy.pythonanywhere.com/]: (http://srmtrichy.pythonanywhere.com/)*
+**This project is now hosted and live, To access it visit http://srmtrichy.pythonanywhere.com/**
 
 ## Overview
 This project is a simple version of our SRMIST Trichy collage website.
