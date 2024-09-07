@@ -3,6 +3,9 @@ Web-Developer test
 
 # SRMIST WebDeveloper Project
 
+## Note
+*This project is now hosted and live, To access it visit [http://srmtrichy.pythonanywhere.com/]: (http://srmtrichy.pythonanywhere.com/)*
+
 ## Overview
 This project is a simple version of our SRMIST Trichy collage website.
 
@@ -16,7 +19,7 @@ This project is a simple version of our SRMIST Trichy collage website.
 - **Contact Us**: Contact number and address.
 
 ## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap (CSS Framework)
 - **Backend**: Python (Flask)
 - **Database**: MySQL
 - **Version Control**: Git
